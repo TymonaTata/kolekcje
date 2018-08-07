@@ -59,7 +59,8 @@ public class Exercise2 {
                     break;
                 }
             }
-            if(!foundName.equals(key) && !foundName.equals(value)) {
+            boolean nameWasFound = foundName.equals(key) || foundName.equals(value);
+            if (!nameWasFound) {
                 System.out.println("Imię "
                         + foundName + " nie zostało znalezione w mapie. Spróbuj jeszcze raz!");
             }
